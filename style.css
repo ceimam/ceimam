@@ -485,6 +485,19 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+}
+
+.card--person .card__title a[href^="perfil-"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.card--person .card__lattes {
+  position: relative;
+  z-index: 2;
 }
 
 .card__avatar {
