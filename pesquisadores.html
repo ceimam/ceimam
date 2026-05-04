@@ -1,207 +1,411 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Pesquisadores &mdash; CEIMAM</title>
-  <link rel="icon" type="image/png" href="favicon.png"/><link rel="stylesheet" href="style.css"/>
-  <style>
-    .pesq-section-title{font-size:1.4rem;font-weight:700;color:var(--text);margin:2.5rem 0 1.2rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent);}
-    .card--person{display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.8rem 1.4rem;gap:.6rem;}
-    .card__avatar{width:80px;height:80px;border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center;margin-bottom:.4rem;flex-shrink:0;}
-    .card__role{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);}
-    .card__title{font-size:1rem;font-weight:700;color:var(--text);line-height:1.3;margin:0;}
-    .card__meta{font-size:.82rem;color:var(--text-muted);margin:0;}
-    .card__actions{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-top:.6rem;}
-    .card__btn{display:inline-block;padding:.35rem .85rem;border-radius:5px;font-size:.78rem;font-weight:600;text-decoration:none;transition:opacity .2s;}
-    .card__btn--profile{background:var(--accent);color:#fff;}
-    .card__btn--lattes{background:var(--surface);color:var(--text);border:1px solid var(--border);}
-    .card__btn:hover{opacity:.8;}
-    .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.4rem;}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;transition:box-shadow .2s;}
-    .card:hover{box-shadow:0 4px 18px rgba(0,0,0,.1);}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesquisadores — CEIMAM</title>
+  <meta name="description" content="Pesquisadores do CEIMAM — Centro de Estudos Indígenas Miguel Angel Menéndez, UNESP Araraquara." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav class="nav" role="navigation"><div class="nav__inner"><a class="nav__logo" href="index.html"><img src="logo-header.png" alt="CEIMAM"/></a><button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav__links" role="list"><li><a class="nav__link" href="index.html">Início</a></li><li><a class="nav__link" href="sobre.html">Sobre</a></li><li><a class="nav__link nav__link--active" href="pesquisadores.html">Pesquisadores</a></li><li><a class="nav__link" href="parceiros.html">Parceiros</a></li><li><a class="nav__link" href="projetos.html">Projetos</a></li><li><a class="nav__link" href="publicacoes.html">Publicações</a></li><li><a class="nav__link" href="eventos.html">Eventos</a></li></ul></div></nav>
 
-<header class="page-hero"><div class="page-hero__inner"><span class="page-hero__label">CEIMAM</span><h1 class="page-hero__title reveal">Pesquisadores</h1><p class="page-hero__sub">Conheça os pesquisadores vinculados ao Centro de Estudos Indígenas &ldquo;Miguel Angel Menéndez&rdquo;</p></div></header>
-
-<section class="section"><div class="section__inner">
-
-  <h2 class="pesq-section-title">Coordenação</h2>
-  <div class="cards-grid">
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Coordenador</span>
-      <h2 class="card__title">Edmundo Antonio Peggion</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-edmundo-peggion.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/6588994059261868" target="_blank">Lattes</a>
-      </div>
-    </article>
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Paulo José Brando Santilli</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-paulo-santilli.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/1828355386855191" target="_blank">Lattes</a>
-      </div>
-    </article>
+<nav class="nav" role="navigation" aria-label="Navegação principal">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html" aria-label="CEIMAM — Página inicial">
+      <img src="logo-header.png" alt="CEIMAM" />
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" role="list">
+      <li><a class="nav__link" href="index.html">Início</a></li>
+      <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+      <li><a class="nav__link" href="pesquisadores.html">Pesquisadores</a></li>
+      <li><a class="nav__link" href="parceiros.html">Parceiros</a></li>
+      <li><a class="nav__link" href="projetos.html">Projetos</a></li>
+      <li><a class="nav__link" href="publicacoes.html">Publicações</a></li>
+      <li><a class="nav__link" href="eventos.html">Eventos</a></li>
+    </ul>
   </div>
+</nav>
 
-  <h2 class="pesq-section-title">Pesquisadores Colaboradores</h2>
-  <div class="cards-grid">
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">Amanda Cristina Danaga</h2>
-      <p class="card__meta">UEMS</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-amanda-danaga.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/8230760897259077" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Daniel dos Santos Robledo</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-daniel-robledo.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/4596789099911809" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Edgar Teodoro da Cunha</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-edgar-cunha.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/6539261486388368" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">Graziele A&ccedil;colini</h2>
-      <p class="card__meta">UFGD</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-graziele-accolini.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/4477794450477197" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Jordeanes do Nascimento Araujo</h2>
-      <p class="card__meta">UFAM</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-jordeanes-araujo.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/1730905579503048" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">L&iacute;gia Rodrigues de Almeida</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-ligia-almeida.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/9263580065240516" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">Mar&iacute;lia Sene de Louren&ccedil;o</h2>
-      <p class="card__meta">CEIMAM/UNESP</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-marilia-lourenco.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/2639771998853175" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">Niminon Suzel Pinheiro</h2>
-      <p class="card__meta">Funda&ccedil;&atilde;o Arapora&atilde; / UNIRP</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-niminon-pinheiro.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/4548989655330560" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Paride Bollettin</h2>
-      <p class="card__meta">Masaryk University (CZ)</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-paride-bollettin.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/0155793037669041" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Robson Antonio Rodrigues</h2>
-      <p class="card__meta">UFU / Funda&ccedil;&atilde;o Arapora&atilde;</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-robson-rodrigues.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/0068480121184829" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">S&iacute;lvia Maria Schmuziger de Carvalho</h2>
-      <p class="card__meta">UNESP Araraquara</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-silvia-carvalho.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/8221280631276020" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisadora Colaboradora</span>
-      <h2 class="card__title">Solange Nunes de Oliveira Schiavetto</h2>
-      <p class="card__meta">UEMG</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-solange-schiavetto.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/8221280631276020" target="_blank">Lattes</a>
-      </div>
-    </article>
-
-    <article class="card card--person reveal">
-      <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:#aaa"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <span class="card__role">Pesquisador Colaborador</span>
-      <h2 class="card__title">Wilson Galhego Garcia</h2>
-      <p class="card__meta">UNESP Ara&ccedil;atuba</p>
-      <div class="card__actions">
-        <a class="card__btn card__btn--profile" href="perfil-wilson-garcia.html">Ver perfil</a>
-        <a class="card__btn card__btn--lattes" href="http://lattes.cnpq.br/6684330455459541" target="_blank">Lattes</a>
-      </div>
-    </article>
-
+<header class="page-hero">
+  <div class="page-hero__inner">
+    <a class="back-link" href="index.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Início
+    </a>
+    <span class="page-hero__label">Equipe</span>
+    <h1 class="page-hero__title reveal">Pesquisadores</h1>
+    <p class="page-hero__desc reveal reveal-delay-1">Pesquisadores vinculados ao CEIMAM na Faculdade de Ciências e Letras — UNESP, Campus de Araraquara.</p>
   </div>
-</div></section>
+</header>
 
-<footer class="footer" role="contentinfo"><div class="footer__inner"><div class="footer__brand"><img src="logo-footer.png" alt="CEIMAM"/><p>Centro de Estudos Indígenas &ldquo;Miguel Angel Menéndez&rdquo;.<br/>Faculdade de Ciências e Letras &mdash; UNESP Araraquara.</p></div><div><p class="footer__heading">Institucional</p><ul class="footer__links"><li><a href="sobre.html">Sobre o CEIMAM</a></li><li><a href="pesquisadores.html">Pesquisadores</a></li><li><a href="parceiros.html">Parceiros</a></li></ul></div><div><p class="footer__heading">Pesquisa</p><ul class="footer__links"><li><a href="projetos.html">Projetos</a></li><li><a href="publicacoes.html">Publicações</a></li><li><a href="eventos.html">Eventos</a></li></ul></div><div><p class="footer__heading">Contato</p><p style="font-size:.85rem;color:var(--text-muted);line-height:1.8;">Rodovia Araraquara–Jaú, Km 1<br/>14800-901 — Araraquara/SP<br/>(16) 3334-6218<br/><a href="mailto:ceimam.fclar@unesp.br" style="color:var(--accent);">ceimam.fclar@unesp.br</a></p></div></div><div class="footer__bottom"><span>&copy; CEIMAM &mdash; UNESP</span><span>Araraquara, SP, Brasil</span></div></footer>
+<section class="section">
+  <div class="section__inner">
+
+    <h2 class="section__subtitle reveal" style="margin-bottom:2rem;">Coordenação</h2>
+    <div class="grid-3" style="margin-bottom:3rem;">
+
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/edmundo-peggion.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <span class="card__role">Coordenador</span>
+        <h2 class="card__title"><a href="perfil-edmundo-peggion.html" style="color:inherit;text-decoration:none;">Edmundo Antonio Peggion</a></h2>
+        <p class="card__meta">Professor · UNESP Araraquara</p>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+        <a href="http://lattes.cnpq.br/9849805103860827" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/hugo-ciavatta.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <span class="card__role">Pós-doc</span>
+        <h2 class="card__title"><a href="perfil-hugo-ciavatta.html" style="color:inherit;text-decoration:none;">Hugo Ciavatta</a></h2>
+        <p class="card__meta">UNESP Araraquara</p>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4272744D5" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+    </div>
+
+    <h2 class="section__subtitle reveal" style="margin-bottom:2rem;">Pesquisadores</h2>
+    <div class="grid-3" style="margin-bottom:3rem;">
+
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/carmen-adsuara.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-carmen-adsuara.html" style="color:inherit;text-decoration:none;">Carmen Hannud Carballeda Adsuara</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/8372974084142072" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/enaie-santos.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-enaie-santos.html" style="color:inherit;text-decoration:none;">Enaie Santos Silva</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/3066792821511885" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h2 class="card__title"><a href="perfil-fabio-martins.html" style="color:inherit;text-decoration:none;">Fabio do Espirito Santo Martins</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/7250625658694610" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/fabio-inocencio.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-fabio-inocencio.html" style="color:inherit;text-decoration:none;">Fábio Rodrigues Inocêncio</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="http://lattes.cnpq.br/0254956242470936" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/felipe-johnson.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-felipe-johnson.html" style="color:inherit;text-decoration:none;">Felipe Mattos Johnson</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/3386684861516276" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/felipe-fernandes.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-felipe-fernandes.html" style="color:inherit;text-decoration:none;">Felipe Munhoz Martins Fernandes</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/5230661255476923" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/gabriel-oliveira.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-gabriel-oliveira.html" style="color:inherit;text-decoration:none;">Gabriel Moraes Ferreira de Oliveira</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="http://lattes.cnpq.br/1019540350514512" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/guilherme-zanardo.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-guilherme-zanardo.html" style="color:inherit;text-decoration:none;">Guilherme Zanardo Costa</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/5561156669563767" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/isabela-serafim.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-isabela-serafim.html" style="color:inherit;text-decoration:none;">Isabela Cristina Serafim</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K1113923A0" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/julia-carvalho.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-julia-carvalho.html" style="color:inherit;text-decoration:none;">Júlia Araújo Carvalho</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/7589765830191861" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/karyne-lima.png" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-karyne-lima.html" style="color:inherit;text-decoration:none;">Karyne Furtunato de Lima</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/9864731626394213" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/larissa-quaresma.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-larissa-quaresma.html" style="color:inherit;text-decoration:none;">Larissa Bianca de Souza Quaresma</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/3370415503950030" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/marco-pinterich.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-marco-pinterich.html" style="color:inherit;text-decoration:none;">Marco Antonio Silva Pinterich</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="http://lattes.cnpq.br/3610049938614820" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/marcio-coelho.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-marcio-coelho.html" style="color:inherit;text-decoration:none;">Márcio Oliveira de Castro Coelho</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/9732373399062436" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/matheus-hengles.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-matheus-hengles.html" style="color:inherit;text-decoration:none;">Matheus Lopes Hengles</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/2879322979210270" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/natalia-checchi.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-natalia-checchi.html" style="color:inherit;text-decoration:none;">Natalia Carvalho de Oliveira Checchi</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/2756809539518583" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/pedro-bossada.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-pedro-bossada.html" style="color:inherit;text-decoration:none;">Pedro Luiz Alves Bossada</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K2421688H0" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/taina-fazanaro.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-taina-fazanaro.html" style="color:inherit;text-decoration:none;">Tainá Rabatini Fazanaro</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--linguistica">Mestrado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/6675553527335402" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/vinicius-siqueira.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-vinicius-siqueira.html" style="color:inherit;text-decoration:none;">Vinícius Romanini Siqueira</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="http://lattes.cnpq.br/1477472933905182" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/vladimir-bertapeli.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-vladimir-bertapeli.html" style="color:inherit;text-decoration:none;">Vladimir Bertapeli</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--etnologia">Doutorado</span>
+        </div>
+        <a href="http://lattes.cnpq.br/6393583401117588" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar" style="background:none;overflow:hidden;"><img src="fotos/yunna-lima.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <h2 class="card__title"><a href="perfil-yunna-lima.html" style="color:inherit;text-decoration:none;">Yunna Lima Cherubini</a></h2>
+        <div class="card__tags" style="margin-top:.75rem;">
+          <span class="tag tag--geral">Graduação</span>
+        </div>
+        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K9608587T6" class="card__lattes" target="_blank">Lattes</a>
+      </article>
+    </div>
+
+    <h2 class="section__subtitle reveal" style="margin-bottom:2rem;">Pesquisadores Colaboradores</h2>
+    <div class="grid-3">
+
+      <article class="card card--person reveal">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Amanda Cristina Danaga</h2>
+        <p class="card__meta">UEMS</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Daniel dos Santos Robledo</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Edgar Teodoro da Cunha</h2>
+        <p class="card__meta">Professor · UNESP Araraquara</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Graziele Açcolini</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Jordeanes do Nascimento Araujo</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Lígia Rodrigues de Almeida</h2>
+        <p class="card__meta">Doutorado · UNESP Araraquara</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Marília Sene de Lourenço</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Niminon Suzel Pinheiro</h2>
+        <p class="card__meta">Doutorado · UNESP Araraquara</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Paride Bollettin</h2>
+        <p class="card__meta">Masaryk University (MUNI-CZ)</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Paulo José Brando Santilli</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--etnologia">Etnologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Robson Antonio Rodrigues</h2>
+        <p class="card__meta">Fundação Araporã</p>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--arqueologia">Arqueologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-2">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Sílvia Maria Schmuziger de Carvalho</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--arqueologia">Arqueologia</span>
+          <span class="tag tag--linguistica">Linguística</span>
+        </div>
+      </article>
+      <article class="card card--person reveal">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisadora Colaboradora</span>
+        <h2 class="card__title">Solange Nunes de Oliveira Schiavetto</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--arqueologia">Arqueologia</span>
+        </div>
+      </article>
+      <article class="card card--person reveal reveal-delay-1">
+        <div class="card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span class="card__role">Pesquisador Colaborador</span>
+        <h2 class="card__title">Wilson Galhego Garcia</h2>
+        <div class="card__tags" style="margin-top: 1rem;">
+          <span class="tag tag--linguistica">Linguística</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="logo-footer.png" alt="CEIMAM" />
+      <p>Centro de Estudos Indígenas &ldquo;Miguel Angel Menéndez&rdquo;.<br />Faculdade de Ciências e Letras — UNESP Araraquara.</p>
+    </div>
+    <div>
+      <p class="footer__heading">Institucional</p>
+      <ul class="footer__links">
+        <li><a href="sobre.html">Sobre o CEIMAM</a></li>
+        <li><a href="pesquisadores.html">Pesquisadores</a></li>
+        <li><a href="parceiros.html">Parceiros</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__heading">Pesquisa</p>
+      <ul class="footer__links">
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="publicacoes.html">Publicações</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__heading">Contato</p>
+      <p style="font-size:.85rem; color:var(--text-muted); line-height:1.8;">Rodovia Araraquara–Jaú, Km 1<br />14800-901 — Araraquara/SP<br />(16) 3334-6218<br /><a href="mailto:ceimam.fclar@unesp.br" style="color:var(--accent);">ceimam.fclar@unesp.br</a></p>
+      <ul class="footer__links" style="margin-top:.75rem;">
+        <li><a href="https://www.youtube.com/@centrodeestudosindigenas8309" target="_blank" style="display:inline-flex;align-items:center;gap:.4rem;"><svg width="14" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>YouTube</a></li>
+        <li><a href="https://www.instagram.com/ceimam.fclar" target="_blank" style="display:inline-flex;align-items:center;gap:.4rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© CEIMAM — Universidade Estadual Paulista (UNESP)</span>
+    <span>Araraquara, São Paulo, Brasil</span>
+  </div>
+</footer>
+
 <script src="main.js"></script>
 </body>
 </html>
