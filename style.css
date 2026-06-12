@@ -37,7 +37,7 @@
   --accent:        #e63946;
   --accent-dim:    rgba(230,57,70,.15);
 
-  --radius:        4px;
+  --radius:        24px;
   --transition:    .25s cubic-bezier(.4,0,.2,1);
   --font-main:     'Inter', system-ui, sans-serif;
   --font-display:  'Space Grotesk', 'Inter', sans-serif;
@@ -538,7 +538,7 @@ ul { list-style: none; }
   letter-spacing: .1em;
   text-transform: uppercase;
   padding: .28rem .65rem;
-  border-radius: 2px;
+  border-radius: 999px;
   border: 1px solid currentColor;
   line-height: 1;
 }
@@ -906,7 +906,7 @@ ul { list-style: none; }
   letter-spacing: .1em;
   text-transform: uppercase;
   padding: .4rem .9rem;
-  border-radius: 2px;
+  border-radius: 999px;
   border: 1px solid var(--border);
   background: none;
   color: var(--text-muted);
