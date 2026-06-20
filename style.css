@@ -41,7 +41,7 @@
   --transition:    .25s cubic-bezier(.4,0,.2,1);
   --font-main:     'Inter', system-ui, sans-serif;
   --font-display:  'Space Grotesk', 'Inter', sans-serif;
-  --font-mono:     'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans:     'JetBrains Mono', 'Fira Code', monospace;
 }
 
 html {
@@ -235,7 +235,7 @@ ul { list-style: none; }
 }
 
 .hero__label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .7rem;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -320,7 +320,7 @@ ul { list-style: none; }
 }
 
 .section__label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .65rem;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -436,7 +436,7 @@ ul { list-style: none; }
 }
 
 .card__meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .7rem;
   letter-spacing: .1em;
   color: var(--text-muted);
@@ -470,7 +470,7 @@ ul { list-style: none; }
   display: inline-block;
   margin-top: .5rem;
   font-size: .7rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -521,7 +521,7 @@ ul { list-style: none; }
 }
 
 .card__role {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .68rem;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -532,7 +532,7 @@ ul { list-style: none; }
 /* ── Tags / chips ─────────────────────────────────────────── */
 .tag {
   display: inline-block;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .62rem;
   font-weight: 500;
   letter-spacing: .1em;
@@ -577,7 +577,7 @@ ul { list-style: none; }
 }
 
 .page-hero__label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .65rem;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -637,7 +637,7 @@ ul { list-style: none; }
 }
 
 .stat__label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .65rem;
   letter-spacing: .15em;
   text-transform: uppercase;
@@ -731,7 +731,7 @@ ul { list-style: none; }
 }
 
 .pub-item__year {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .68rem;
   letter-spacing: .1em;
   color: var(--text-muted);
@@ -771,7 +771,7 @@ ul { list-style: none; }
 }
 
 .event-item__month {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .65rem;
   letter-spacing: .15em;
   text-transform: uppercase;
@@ -837,7 +837,7 @@ ul { list-style: none; }
 }
 
 .footer__heading {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .65rem;
   letter-spacing: .18em;
   text-transform: uppercase;
@@ -901,7 +901,7 @@ ul { list-style: none; }
 }
 
 .filter-btn {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .68rem;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -1002,7 +1002,7 @@ ul { list-style: none; }
 }
 
 .numbered-item__num {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .7rem;
   letter-spacing: .1em;
   color: var(--accent);
